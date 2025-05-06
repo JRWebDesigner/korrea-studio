@@ -34,10 +34,16 @@
     window.addEventListener('scroll', () => {
       if (window.scrollY > 0) {
         header.classList.remove('w-full', 'rounded-none');
-        header.classList.add('w-[96%]', 'rounded-b-full', 'from-blue-950', 'to-green-700');
+        header.classList.add('w-[96%]');
+        header.classList.add('rounded-b-full');
+        header.classList.add('from-blue-950');
+        header.classList.add('to-green-700');
       } else {
-        header.classList.remove('w-[96%]', 'rounded-b-full', 'from-blue-950', 'to-green-700');
-        header.classList.add('w-full', 'rounded-none');
+        header.classList.remove('w-[96%]');
+        header.classList.remove('rounded-b-full');
+        header.classList.remove('from-blue-950');
+        header.classList.remove('to-green-700');
+        header.classList.remove('w-full', 'rounded-none');
       }
     });
 
